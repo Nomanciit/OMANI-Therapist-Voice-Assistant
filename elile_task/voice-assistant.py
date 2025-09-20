@@ -166,7 +166,7 @@ async def entrypoint(ctx: agents.JobContext):
         vad=silero.VAD.load(),
         #turn_detection=MultilingualModel(),
         user_away_timeout=12.5,
-        # fnc_ctx=SafetyProtocols(), 
+        fnc_ctx=SafetyProtocols(), 
     )
 
     inactivity_task: asyncio.Task | None = None
