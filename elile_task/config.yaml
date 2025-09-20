@@ -1,0 +1,33 @@
+ai_models:
+  gpt_model: "gpt-4o"
+  gpt_stt_model: "gpt-4o-transcribe"
+  claude_model: "claude-3-5-sonnet-20241022"
+  temperature: 0.8
+  max_tokens: 1024
+  use_validation: true
+  max_retries: 2
+
+elevenlabs:
+  model: "eleven_multilingual_v2"
+  voice_id: "5MRtDX7fpi72xPHrBDUS"
+  language: "ar"
+  enable_ssml_parsing: false
+  voice_settings:
+    stability: 0.71
+    similarity_boost: 0.5
+    style: 0.0
+    use_speaker_boost: true
+  chunk_length_schedule: [80, 120, 200, 260]
+
+deepgram:
+  model: "nova-2-general"
+  language: "en-US"
+  options:
+    interim_results: true
+    smart_format: true
+    punctuate: true
+    filler_words: true
+    profanity_filter: false
+  keywords:
+    - name: "LiveKit"
+      boost: 1.5
